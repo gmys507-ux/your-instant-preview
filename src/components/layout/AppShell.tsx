@@ -43,7 +43,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           </Link>
 
           {/* CENTER — tabs */}
-          <nav className="flex items-center gap-0.5">
+          <nav id="tour-nav" className="flex items-center gap-0.5">
             {tabs.map((tab) => {
               const isActive = location.pathname === tab.path
               return (
@@ -91,11 +91,12 @@ export function AppShell({ children }: { children: ReactNode }) {
       {/* MAIN */}
       <main className="max-w-[1440px] mx-auto">{children}</main>
 
-      {/* Floating ✦ button */}
+      {/* Floating ✦ button (우하단) */}
       <button
+        id="tour-ai-button"
         onClick={() => setPanelOpen(true)}
         aria-label="AI 어시스턴트 열기"
-        className="fixed bottom-6 left-6 w-12 h-12 rounded-full flex items-center justify-center shadow-card-hover hover:scale-105 hover:shadow-lg transition-all duration-200 z-40 group"
+        className="fixed bottom-6 right-6 w-12 h-12 rounded-full flex items-center justify-center shadow-card-hover hover:scale-105 hover:shadow-lg transition-all duration-200 z-40 group"
         style={{
           background: 'linear-gradient(135deg, #5B4FE5 0%, #2E2580 100%)',
         }}

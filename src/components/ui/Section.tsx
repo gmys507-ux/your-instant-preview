@@ -6,15 +6,16 @@ type Props = {
   rightSlot?: ReactNode
   children: ReactNode
   className?: string
+  id?: string
 }
 
 /**
  * Standard dashboard section block.
  * Eyebrow (mono uppercase) + Title (Pretendard or Fraunces) + content
  */
-export function Section({ eyebrow, title, rightSlot, children, className = '' }: Props) {
+export function Section({ eyebrow, title, rightSlot, children, className = '', id }: Props) {
   return (
-    <section className={`mb-10 ${className}`}>
+    <section id={id} className={`mb-10 ${className}`}>
       {(eyebrow || title || rightSlot) && (
         <div className="flex items-end justify-between gap-4 mb-5">
           <div>

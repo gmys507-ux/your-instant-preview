@@ -40,11 +40,10 @@ export function Hero() {
               </span>
             </div>
 
-            <h1 className="font-sans text-[28px] md:text-[40px] leading-[1.15] tracking-[-0.02em] text-ink font-bold">
-              마케터가 직접{' '}
-              <span className="text-indigo">만들고</span>,
+            <h1 className="font-sans text-[28px] md:text-[38px] leading-[1.18] tracking-[-0.02em] text-ink font-bold">
+              <span className="text-indigo">#광고 최적화</span>, <span className="text-indigo">100배</span> 빠르게.
               <br />
-              직접 <span className="text-indigo">측정</span>합니다.
+              <span className="text-indigo">#가설 검증</span>을 <span className="text-indigo">4배</span> 빠르게.
             </h1>
 
             <p className="mt-4 text-[14px] md:text-[15px] text-ink-2 leading-[1.7]">

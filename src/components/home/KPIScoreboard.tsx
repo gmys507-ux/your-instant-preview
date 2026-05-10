@@ -7,6 +7,7 @@ import { ScoreCard } from '../ui/ScoreCard'
 export function KPIScoreboard() {
   return (
     <Section
+      id="tour-kpi"
       eyebrow="TODAY · INDICATORS"
       title="관심 가져야 할 지표"
       className="px-8 mt-12"
