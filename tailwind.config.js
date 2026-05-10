@@ -46,9 +46,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'system-ui', 'sans-serif'],
+        sans: ['Pretendard Variable', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'system-ui', 'sans-serif'],
         serif: ['Fraunces', 'Pretendard', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'Menlo', 'Consolas', 'monospace'],
+        inter: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       fontSize: {
         'display-xl': ['88px', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
@@ -64,10 +65,14 @@ export default {
         tiny: ['10px', { lineHeight: '1.3' }],
       },
       borderRadius: {
-        card: '16px',
+        card: '12px',
+        badge: '12px',
+        button: '8px',
       },
       boxShadow: {
-        card: '0 8px 24px rgba(20,20,18,0.08)',
+        card: '0 1px 3px rgba(20,20,18,0.04), 0 1px 2px rgba(20,20,18,0.02)',
+        'card-hover': '0 4px 12px rgba(20,20,18,0.08)',
+        header: '0 1px 3px rgba(20,20,18,0.06)',
       },
       transitionTimingFunction: {
         'out-soft': 'cubic-bezier(0.22, 1, 0.36, 1)',

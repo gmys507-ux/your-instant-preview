@@ -2,7 +2,6 @@ import { useState, type ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Sparkles } from 'lucide-react'
 import { AISidePanel } from './AISidePanel'
-import { Pill } from '../ui/Pill'
 
 const tabs = [
   { path: '/', label: '홈' },
@@ -17,51 +16,74 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen bg-bg text-ink">
-      {/* 톱 네비게이션 */}
-      <nav className="h-14 border-b border-rule bg-white/80 backdrop-blur-sm sticky top-0 z-30">
-        <div className="h-full max-w-[1280px] mx-auto px-6 flex items-center justify-between gap-6">
-          <Link to="/" className="font-serif italic text-h2 text-indigo shrink-0">
-            Prism
+      {/* Production-grade header — sticky, backdrop-blur, soft shadow */}
+      <header
+        className="sticky top-0 z-30 border-b border-rule shadow-header"
+        style={{
+          background: 'rgba(250, 250, 247, 0.85)',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+        }}
+      >
+        <div className="max-w-[1440px] mx-auto px-8 h-14 flex items-center justify-between gap-6">
+          {/* LEFT — logo */}
+          <Link to="/" className="flex items-baseline gap-2 shrink-0">
+            <span className="font-serif italic text-[20px] font-medium text-indigo leading-none">
+              Prism
+            </span>
+            <span className="font-inter text-[12px] font-medium text-ink-3">
+              Marketing Content OS
+            </span>
           </Link>
 
-          <div className="flex items-center gap-1">
+          {/* CENTER — tabs */}
+          <nav className="flex items-center gap-0.5">
             {tabs.map((tab) => {
               const isActive = location.pathname === tab.path
               return (
                 <Link
                   key={tab.path}
                   to={tab.path}
-                  className={`px-4 py-2 rounded-lg text-body-sm transition-colors ${
+                  className={`px-3.5 py-1.5 rounded-md text-[13.5px] transition-colors duration-150 ${
                     isActive
-                      ? 'text-indigo bg-indigo-bg font-medium'
-                      : 'text-ink-3 hover:text-ink hover:bg-bg-2'
+                      ? 'text-indigo bg-indigo-bg font-semibold'
+                      : 'text-ink-3 hover:text-ink hover:bg-bg-2 font-medium'
                   }`}
                 >
                   {tab.label}
                 </Link>
               )
             })}
-          </div>
+          </nav>
 
-          <Pill variant="success" className="shrink-0">
-            <span className="w-1.5 h-1.5 rounded-full bg-success" />
-            <span className="font-mono text-tiny tracking-wider uppercase">
-              Connected to Amplitude
+          {/* RIGHT — connected pill */}
+          <div className="flex items-center gap-2 shrink-0">
+            <span
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-badge bg-success-bg"
+              title="Amplitude 연동 활성"
+            >
+              <span className="relative flex w-1.5 h-1.5">
+                <span className="absolute inset-0 rounded-full bg-success animate-ping opacity-60" />
+                <span className="relative w-1.5 h-1.5 rounded-full bg-success" />
+              </span>
+              <span className="font-inter text-[11px] font-semibold text-success-deep tracking-wide uppercase">
+                Connected · Amplitude
+              </span>
             </span>
-          </Pill>
+          </div>
         </div>
-      </nav>
+      </header>
 
-      {/* 메인 컨텐츠 */}
-      <main className="max-w-[1280px] mx-auto">{children}</main>
+      {/* MAIN */}
+      <main className="max-w-[1440px] mx-auto">{children}</main>
 
-      {/* 좌하단 floating ✦ 버튼 — 모든 페이지에 노출 */}
+      {/* Floating ✦ button */}
       <button
         onClick={() => setPanelOpen(true)}
         aria-label="AI 어시스턴트 열기"
-        className="fixed bottom-6 left-6 w-11 h-11 rounded-full bg-ink text-paper flex items-center justify-center shadow-card hover:scale-105 transition-transform duration-200 z-40"
+        className="fixed bottom-6 left-6 w-12 h-12 rounded-full bg-ink text-paper flex items-center justify-center shadow-card-hover hover:scale-105 hover:shadow-lg transition-all duration-200 z-40 group"
       >
-        <Sparkles size={18} />
+        <Sparkles size={18} className="group-hover:rotate-12 transition-transform duration-300" />
       </button>
 
       <AISidePanel

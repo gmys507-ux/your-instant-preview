@@ -12,7 +12,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: var(--fs-body);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +24,7 @@ body {
   min-height: 100svh;
 }
 
-/* 한글은 Pretendard, 영문 디스플레이 헤딩은 Fraunces 이탤릭, 라벨/메타는 JetBrains Mono */
+/* 헬퍼 유틸 */
 .font-display {
   font-family: var(--font-serif);
   font-style: italic;
@@ -35,4 +35,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: var(--ink-3);
+}
+
+/* Production-grade fade-in-up — stagger animation용 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
 }
