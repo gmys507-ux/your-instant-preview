@@ -1,0 +1,340 @@
+/**
+ * Prism — Visual Design Tokens v1.0
+ * 
+ * Lovable / Claude Code 양쪽에 그대로 붙여넣어 사용.
+ * 모든 컴포넌트가 이 토큰을 참조해야 일관성 유지.
+ * 
+ * Usage:
+ *   1. import './prism_visual_tokens.css' (또는 globals.css에 paste)
+ *   2. var(--indigo) 형태로 컴포넌트에서 사용
+ *   3. Tailwind config에 매핑하려면 아래 매핑 섹션 참조
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  /* ─── BACKGROUNDS ─── */
+  --bg: #FAFAF7;              /* 메인 페이퍼 베이스 */
+  --bg-2: #F2F0E8;            /* 카드 안쪽, 보조 영역 */
+  --bg-3: #ECE9DD;            /* 더 진한 보조 */
+  --paper: #FFFFFF;           /* 떠 있는 흰 카드 */
+
+  /* ─── INK (텍스트) ─── */
+  --ink: #141412;             /* 메인 텍스트, 다크 카드 배경 */
+  --ink-2: #2C2C28;           /* 본문 보조 */
+  --ink-3: #5C5A52;           /* 메타·라벨 */
+  --ink-4: #8E8B7E;           /* 디스에이블·플레이스홀더 */
+
+  /* ─── RULES (라인·테두리) ─── */
+  --rule: #D8D2C2;            /* 기본 보더 */
+  --rule-light: #E8E3D5;      /* 가벼운 구분선 */
+
+  /* ─── BRAND COLORS ─── */
+  --indigo: #5B4FE5;          /* 메인 액센트 — AI · 액션 */
+  --indigo-bg: #E8E5FB;       /* 인디고 라이트 배경 */
+  --indigo-deep: #2E2580;     /* 인디고 텍스트 (라이트 배경 위) */
+
+  --pink: #EC4899;            /* 서브 액센트 — 하이라이트 */
+  --pink-bg: #FBE4EF;         /* 핑크 라이트 배경 */
+  --pink-deep: #831843;       /* 핑크 텍스트 */
+
+  /* ─── SEMANTIC COLORS ─── */
+  --green: #10B981;           /* 성공 · 긍정 시그널 */
+  --green-bg: #DEF5EB;
+  --green-deep: #064E3B;
+
+  --amber: #D97706;           /* 경고 · 주의 */
+  --amber-bg: #FBEEDA;
+  --amber-deep: #78350F;
+
+  --red: #DC2626;             /* 에러 · 위험 */
+  --red-bg: #FBE4E4;
+  --red-deep: #7F1D1D;
+
+  /* ─── TYPOGRAPHY ─── */
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-serif: 'Fraunces', 'Pretendard', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Menlo', 'Consolas', monospace;
+
+  /* ─── FONT SIZES ─── */
+  --fs-display-xl: 88px;     /* 표지·홈 hero */
+  --fs-display: 48px;        /* 섹션 헤더 */
+  --fs-h1: 32px;
+  --fs-h2: 24px;
+  --fs-h3: 20px;
+  --fs-body-lg: 17px;
+  --fs-body: 15px;
+  --fs-body-sm: 13.5px;
+  --fs-meta: 12px;
+  --fs-eyebrow: 11px;        /* Mono uppercase 라벨 */
+  --fs-tiny: 10px;
+
+  /* ─── SPACING ─── */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+
+  /* ─── RADII ─── */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-2xl: 24px;
+  --r-full: 9999px;
+
+  /* ─── SHADOWS ─── */
+  --shadow-sm: 0 1px 2px rgba(20,20,18,0.04);
+  --shadow-md: 0 4px 12px rgba(20,20,18,0.08);
+  --shadow-lg: 0 12px 32px rgba(20,20,18,0.12);
+  --shadow-glow-indigo: 0 8px 24px rgba(91,79,229,0.18);
+
+  /* ─── TRANSITIONS ─── */
+  --t-fast: 150ms ease-out;
+  --t-normal: 250ms ease-out;
+  --t-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─────────────────────────────────────────
+   기본 스타일 (글로벌)
+   ───────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--bg);
+  font-feature-settings: "ss01", "ss02";
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.005em;
+}
+
+.serif {
+  font-family: var(--font-serif);
+  font-feature-settings: "ss01", "ss02", "ss03";
+}
+
+.mono,
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* ─────────────────────────────────────────
+   유틸리티 클래스
+   ───────────────────────────────────────── */
+
+.card {
+  background: var(--paper);
+  border: 0.5px solid var(--rule);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  transition: transform var(--t-normal), box-shadow var(--t-normal);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-tight {
+  padding: var(--sp-4);
+}
+
+.btn {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-sm);
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: var(--r-md);
+  border: 0.5px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+
+.btn:hover {
+  background: var(--bg-2);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--indigo);
+  color: var(--paper);
+  border-color: var(--indigo);
+}
+
+.btn-primary:hover {
+  background: var(--indigo-deep);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 5px 11px;
+  border-radius: var(--r-full);
+  text-transform: uppercase;
+}
+
+.pill-indigo { background: var(--indigo-bg); color: var(--indigo-deep); }
+.pill-green  { background: var(--green-bg);  color: var(--green-deep); }
+.pill-amber  { background: var(--amber-bg);  color: var(--amber-deep); }
+.pill-pink   { background: var(--pink-bg);   color: var(--pink-deep); }
+.pill-red    { background: var(--red-bg);    color: var(--red-deep); }
+
+.input {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  padding: 12px 16px;
+  border: 0.5px solid var(--rule);
+  border-radius: var(--r-lg);
+  background: var(--paper);
+  color: var(--ink);
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--indigo);
+  box-shadow: 0 0 0 3px var(--indigo-bg);
+}
+
+/* ─────────────────────────────────────────
+   모듈별 무드 (선택적 적용)
+   ───────────────────────────────────────── */
+
+.mood-home {
+  /* 다크 그라데이션 hero — Amplitude 톤 */
+  background: 
+    radial-gradient(circle at 70% 30%, rgba(91,79,229,0.18), transparent 60%),
+    radial-gradient(circle at 90% 70%, rgba(236,72,153,0.12), transparent 60%),
+    var(--ink);
+  color: var(--paper);
+}
+
+.mood-gallery {
+  /* 매거진 톤 — 라이트 배경, 풍부한 그리드 */
+  background: var(--bg);
+}
+
+.mood-assistant {
+  /* 작업실 톤 — 미니멀 화이트, 큰 여백 */
+  background: var(--paper);
+}
+
+.mood-dashboard {
+  /* 브리핑 룸 — 라이트 배경, 데이터 강조 */
+  background: var(--bg);
+}
+
+/* ─────────────────────────────────────────
+   Heading styles
+   ───────────────────────────────────────── */
+
+h1.title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-display-xl);
+  line-height: 0.92;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+}
+
+h1.title em {
+  font-style: italic;
+  color: var(--indigo);
+}
+
+h2.section {
+  font-family: var(--font-serif);
+  font-size: var(--fs-display);
+  line-height: 1.04;
+  font-weight: 400;
+  letter-spacing: -0.024em;
+}
+
+h2.section em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--indigo);
+}
+
+h3.sub {
+  font-family: var(--font-serif);
+  font-size: var(--fs-h2);
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+}
+
+/* ─────────────────────────────────────────
+   Animations
+   ───────────────────────────────────────── */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+.animate-fade-in-up { animation: fadeInUp var(--t-slow) both; }
+.animate-pulse-slow { animation: pulse 2s ease-in-out infinite; }
+.animate-slide-in   { animation: slideInRight var(--t-slow) both; }
+
+/* Stagger helpers */
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 100ms; }
+.stagger > *:nth-child(3) { animation-delay: 200ms; }
+.stagger > *:nth-child(4) { animation-delay: 300ms; }
+.stagger > *:nth-child(5) { animation-delay: 400ms; }
+.stagger > *:nth-child(6) { animation-delay: 500ms; }
+
+
+/* ─────────────────────────────────────────
+   Tailwind config 매핑 (선택)
+   tailwind.config.js의 theme.extend.colors에:
+   ─────────────────────────────────────────
+   {
+     bg: { DEFAULT: '#FAFAF7', 2: '#F2F0E8', 3: '#ECE9DD' },
+     ink: { DEFAULT: '#141412', 2: '#2C2C28', 3: '#5C5A52', 4: '#8E8B7E' },
+     paper: '#FFFFFF',
+     rule: { DEFAULT: '#D8D2C2', light: '#E8E3D5' },
+     indigo: { DEFAULT: '#5B4FE5', bg: '#E8E5FB', deep: '#2E2580' },
+     pink: { DEFAULT: '#EC4899', bg: '#FBE4EF', deep: '#831843' },
+   }
+   ───────────────────────────────────────── */
