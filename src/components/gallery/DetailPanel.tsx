@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { X, Send } from 'lucide-react'
+import { X, Send, Play, ExternalLink } from 'lucide-react'
 import type { Ad } from '../../lib/types'
 import { Badge } from '../ui/Badge'
 import { PlatformIcon } from './PlatformIcon'
+import { youtubeThumbnail, youtubeEmbedUrl, youtubeWatchUrl } from '../../lib/youtube'
 
 type Props = {
   ad: Ad | null
@@ -28,6 +30,11 @@ function gradientFor(adId: string): string {
 }
 
 export function DetailPanel({ ad, onClose, onSendToAssistant }: Props) {
+  const [playing, setPlaying] = useState(false)
+
+  // ad 변경 시 재생 상태 초기화
+  if (ad === null && playing) setPlaying(false)
+
   return (
     <AnimatePresence>
       {ad && (
@@ -66,16 +73,49 @@ export function DetailPanel({ ad, onClose, onSendToAssistant }: Props) {
 
             {/* 스크롤 콘텐츠 */}
             <div className="flex-1 overflow-y-auto">
-              {/* 큰 썸네일 */}
+              {/* 큰 썸네일 — 영상 임베드 또는 이미지 + 재생 버튼 */}
               <div
-                className="relative w-full h-72"
+                className="relative w-full aspect-video bg-black"
                 style={{ background: gradientFor(ad.id) }}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 rounded-full bg-white/40 backdrop-blur-md border border-white/60 flex items-center justify-center text-ink-2">
-                    <PlatformIcon platform={ad.platform} size={32} />
-                  </div>
-                </div>
+                {playing ? (
+                  <iframe
+                    src={`${youtubeEmbedUrl(ad.id)}&autoplay=1`}
+                    title={`${ad.brand} ${ad.product}`}
+                    className="absolute inset-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <>
+                    <img
+                      src={youtubeThumbnail(ad.id)}
+                      alt={`${ad.brand} ${ad.product}`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      onError={(e) => {
+                        ;(e.currentTarget as HTMLImageElement).style.display = 'none'
+                      }}
+                    />
+                    <button
+                      onClick={() => setPlaying(true)}
+                      className="absolute inset-0 flex items-center justify-center group/play"
+                      aria-label="영상 재생"
+                    >
+                      <div className="w-16 h-16 rounded-full bg-white/85 backdrop-blur-md border border-white flex items-center justify-center text-ink shadow-card-hover group-hover/play:scale-105 transition-transform">
+                        <Play size={24} className="ml-1" fill="currentColor" />
+                      </div>
+                    </button>
+                    <a
+                      href={youtubeWatchUrl(ad.id)}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="absolute top-3 right-3 inline-flex items-center gap-1 px-2 py-1 rounded-md bg-black/55 backdrop-blur-sm text-white text-[10.5px] font-medium hover:bg-black/75 transition-colors"
+                    >
+                      <ExternalLink size={11} />
+                      <span>YouTube</span>
+                    </a>
+                  </>
+                )}
               </div>
 
               <div className="p-6 space-y-6">

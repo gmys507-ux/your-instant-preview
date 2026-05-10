@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Play } from 'lucide-react'
 import type { ReviewSection4 } from '../../../lib/types'
 import { Badge } from '../../ui/Badge'
 import { PlatformIcon } from '../../gallery/PlatformIcon'
+import { youtubeThumbnail } from '../../../lib/youtube'
 
 function gradientFor(adId: string): string {
   const palettes = [
@@ -51,14 +52,29 @@ export function CompetitorComparisonSection({
             onClick={() => navigate('/gallery')}
           >
             <div
-              className="relative h-32 flex items-center justify-center"
+              className="relative h-32 overflow-hidden"
               style={{ background: gradientFor(item.ad_id) }}
             >
-              <div className="w-12 h-12 rounded-full bg-white/40 backdrop-blur-md border border-white/60 flex items-center justify-center text-ink-2 group-hover:bg-white/70 transition-colors">
-                <PlatformIcon platform={item.platform} size={20} />
+              <img
+                src={youtubeThumbnail(item.ad_id)}
+                alt={`${item.brand} ${item.product}`}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                onError={(e) => {
+                  ;(e.currentTarget as HTMLImageElement).style.display = 'none'
+                }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="w-10 h-10 rounded-full bg-white/85 backdrop-blur-md border border-white flex items-center justify-center text-ink shadow-card-hover">
+                  <Play size={14} className="ml-0.5" fill="currentColor" />
+                </div>
               </div>
-              <span className="absolute top-2 right-2 font-inter text-[10px] font-semibold uppercase tracking-wide text-ink-2 bg-white/85 px-2 py-0.5 rounded-md backdrop-blur-sm tabular-nums">
+              <span className="absolute top-2 right-2 z-10 font-inter text-[10px] font-semibold uppercase tracking-wide text-ink-2 bg-white/85 px-2 py-0.5 rounded-md backdrop-blur-sm tabular-nums">
                 유사도 {item.similarity_score}%
+              </span>
+              <span className="absolute top-2 left-2 z-10 inline-flex items-center gap-1 font-inter text-[10px] font-semibold text-white bg-black/55 backdrop-blur-sm px-1.5 py-0.5 rounded-md">
+                <PlatformIcon platform={item.platform} size={9} />
+                {item.platform}
               </span>
             </div>
 

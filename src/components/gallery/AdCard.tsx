@@ -1,7 +1,8 @@
-import { Check } from 'lucide-react'
+import { Check, Play } from 'lucide-react'
 import type { Ad } from '../../lib/types'
 import { Badge } from '../ui/Badge'
 import { PlatformIcon } from './PlatformIcon'
+import { youtubeThumbnail } from '../../lib/youtube'
 
 type Props = {
   ad: Ad
@@ -71,28 +72,46 @@ export function AdCard({ ad, selected, onClick, onToggleSelect, delay = 0 }: Pro
         <Check size={14} strokeWidth={3} />
       </button>
 
-      {/* 썸네일 (gradient placeholder) */}
+      {/* 썸네일 — YouTube 이미지 + gradient fallback */}
       <div
         className={`relative w-full ${heightClass} overflow-hidden`}
         style={{ background: gradientFor(ad.id) }}
       >
-        {/* 중앙 플랫폼 아이콘 (호버 시 강조) */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-12 h-12 rounded-full bg-white/40 backdrop-blur-md border border-white/60 flex items-center justify-center text-ink-2 group-hover:bg-white/70 group-hover:scale-110 transition-all">
-            <PlatformIcon platform={ad.platform} size={20} />
+        <img
+          src={youtubeThumbnail(ad.id)}
+          alt={`${ad.brand} ${ad.product}`}
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            ;(e.currentTarget as HTMLImageElement).style.display = 'none'
+          }}
+        />
+
+        {/* 호버 시 재생 인디케이터 */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="w-12 h-12 rounded-full bg-white/85 backdrop-blur-md border border-white flex items-center justify-center text-ink shadow-card-hover">
+            <Play size={18} className="ml-0.5" fill="currentColor" />
           </div>
         </div>
 
         {/* 우상단: 운영 일수 */}
-        <div className="absolute top-3 left-3">
-          <span className="font-inter text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-2 bg-white/80 backdrop-blur-sm px-2 py-0.5 rounded-md">
+        <div className="absolute top-3 left-3 z-10">
+          <span className="font-inter text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-2 bg-white/85 backdrop-blur-sm px-2 py-0.5 rounded-md shadow-sm">
             {ad.metrics.running_days}일째
           </span>
         </div>
 
+        {/* 우상단(반대): 플랫폼 미니 칩 */}
+        <div className="absolute top-3 right-12 z-10">
+          <span className="inline-flex items-center gap-1 font-inter text-[10px] font-semibold text-white bg-black/55 backdrop-blur-sm px-1.5 py-0.5 rounded-md">
+            <PlatformIcon platform={ad.platform} size={9} />
+            {ad.platform}
+          </span>
+        </div>
+
         {/* 좌하단: 카피 hook (이미지 위 오버레이) */}
-        <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/35 via-black/15 to-transparent">
-          <p className="text-white text-[13px] font-semibold leading-snug line-clamp-2 drop-shadow-sm">
+        <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/65 via-black/30 to-transparent z-10">
+          <p className="text-white text-[13px] font-semibold leading-snug line-clamp-2 drop-shadow-md">
             {ad.copy_hook}
           </p>
         </div>
