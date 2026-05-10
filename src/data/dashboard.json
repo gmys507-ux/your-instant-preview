@@ -1,0 +1,298 @@
+{
+  "kpis": [
+    {
+      "key": "revenue",
+      "label": "매출",
+      "value": "₩2.4억",
+      "delta": "+12%",
+      "delta_direction": "up",
+      "period": "지난주 대비"
+    },
+    {
+      "key": "roas",
+      "label": "ROAS",
+      "value": "3.8",
+      "delta": "+0.4",
+      "delta_direction": "up",
+      "period": "지난주 대비"
+    },
+    {
+      "key": "ad_spend",
+      "label": "광고비",
+      "value": "₩63M",
+      "delta": "-3%",
+      "delta_direction": "down",
+      "period": "지난주 대비"
+    },
+    {
+      "key": "ctr",
+      "label": "CTR",
+      "value": "2.1%",
+      "delta": "-0.2%p",
+      "delta_direction": "down",
+      "period": "지난주 대비"
+    },
+    {
+      "key": "cvr",
+      "label": "CVR",
+      "value": "4.3%",
+      "delta": "+0.5%p",
+      "delta_direction": "up",
+      "period": "지난주 대비"
+    },
+    {
+      "key": "new_signups",
+      "label": "신규 가입",
+      "value": "1,284",
+      "delta": "+18%",
+      "delta_direction": "up",
+      "period": "지난주 대비"
+    }
+  ],
+  "causal_decomposition": {
+    "default_tab": "sankey",
+    "sankey": {
+      "nodes": [
+        {
+          "id": "ad_meta",
+          "label": "Meta 광고",
+          "layer": 0
+        },
+        {
+          "id": "ad_yt",
+          "label": "YouTube 광고",
+          "layer": 0
+        },
+        {
+          "id": "ad_tiktok",
+          "label": "TikTok 광고",
+          "layer": 0
+        },
+        {
+          "id": "imp",
+          "label": "노출",
+          "layer": 1
+        },
+        {
+          "id": "click",
+          "label": "클릭",
+          "layer": 2
+        },
+        {
+          "id": "signup",
+          "label": "가입",
+          "layer": 3
+        },
+        {
+          "id": "purchase",
+          "label": "구매",
+          "layer": 4
+        },
+        {
+          "id": "revenue",
+          "label": "매출",
+          "layer": 5
+        }
+      ],
+      "links": [
+        {
+          "source": "ad_meta",
+          "target": "imp",
+          "value": 4200000
+        },
+        {
+          "source": "ad_yt",
+          "target": "imp",
+          "value": 2800000
+        },
+        {
+          "source": "ad_tiktok",
+          "target": "imp",
+          "value": 3500000
+        },
+        {
+          "source": "imp",
+          "target": "click",
+          "value": 220000
+        },
+        {
+          "source": "click",
+          "target": "signup",
+          "value": 12800
+        },
+        {
+          "source": "signup",
+          "target": "purchase",
+          "value": 5400
+        },
+        {
+          "source": "purchase",
+          "target": "revenue",
+          "value": 240000000
+        }
+      ]
+    },
+    "node_graph": {
+      "description": "광고비 → CTR → CVR → 매출의 영향 관계 노드 그래프"
+    },
+    "funnel": {
+      "stages": [
+        {
+          "label": "노출",
+          "value": 10500000,
+          "rate": 100
+        },
+        {
+          "label": "클릭",
+          "value": 220000,
+          "rate": 2.1
+        },
+        {
+          "label": "가입",
+          "value": 12800,
+          "rate": 5.8
+        },
+        {
+          "label": "구매",
+          "value": 5400,
+          "rate": 42.2
+        }
+      ]
+    },
+    "multi_layer": {
+      "layers": [
+        {
+          "name": "광고",
+          "items": [
+            "Meta",
+            "YouTube",
+            "TikTok",
+            "Instagram"
+          ]
+        },
+        {
+          "name": "행동",
+          "items": [
+            "뷰",
+            "클릭",
+            "스크롤"
+          ]
+        },
+        {
+          "name": "전환",
+          "items": [
+            "가입",
+            "구매"
+          ]
+        },
+        {
+          "name": "결과",
+          "items": [
+            "매출"
+          ]
+        }
+      ]
+    }
+  },
+  "user_data": {
+    "funnel": {
+      "stages": [
+        {
+          "label": "사이트 방문",
+          "value": 145000,
+          "rate": 100
+        },
+        {
+          "label": "회원가입",
+          "value": 12800,
+          "rate": 8.8
+        },
+        {
+          "label": "첫 구매",
+          "value": 5400,
+          "rate": 42.2
+        },
+        {
+          "label": "재구매",
+          "value": 1820,
+          "rate": 33.7
+        }
+      ]
+    },
+    "retention": {
+      "cohorts": [
+        {
+          "name": "1월 가입",
+          "d1": 78,
+          "d7": 52,
+          "d30": 31
+        },
+        {
+          "name": "2월 가입",
+          "d1": 81,
+          "d7": 58,
+          "d30": 38
+        },
+        {
+          "name": "3월 가입",
+          "d1": 83,
+          "d7": 64,
+          "d30": 42
+        }
+      ]
+    },
+    "segments": [
+      {
+        "name": "30대 여성",
+        "conversion_rate": 6.2,
+        "share": 38
+      },
+      {
+        "name": "20대 여성",
+        "conversion_rate": 4.8,
+        "share": 27
+      },
+      {
+        "name": "40대 여성",
+        "conversion_rate": 5.4,
+        "share": 18
+      },
+      {
+        "name": "20-40 남성",
+        "conversion_rate": 2.1,
+        "share": 17
+      }
+    ]
+  },
+  "bridge_insight": "ROAS 3.8을 만든 핵심 코호트는 30대 여성 세그먼트 — 화장솜 카테고리 콘텐츠에 가장 높은 전환 (CVR 6.2%, 전체 대비 1.4× 높음).",
+  "ai_insights": [
+    {
+      "id": "insight_01",
+      "title": "ROAS 18% 하락 — 화장솜 콘텐츠 피로도 원인",
+      "body": "동일 컨셉 광고 21일 이상 운영, CTR 4.2% → 2.1%로 하락",
+      "severity": "warning",
+      "actions": [
+        "새 컨셉 기획하기",
+        "비슷한 광고 갤러리에서 보기"
+      ]
+    },
+    {
+      "id": "insight_02",
+      "title": "신규 가입 코호트 D7 retention +12%p",
+      "body": "3월 가입 코호트가 1월 대비 +12%p 개선. 온보딩 개편 효과로 추정",
+      "severity": "success",
+      "actions": [
+        "코호트 자세히 보기"
+      ]
+    },
+    {
+      "id": "insight_03",
+      "title": "YouTube 광고 비용 효율 +24%, 비중 확대 권장",
+      "body": "YouTube ROAS 4.6, Meta 3.2 — 채널별 비용 재배분 검토",
+      "severity": "info",
+      "actions": [
+        "채널 비교 시뮬레이션"
+      ]
+    }
+  ]
+}

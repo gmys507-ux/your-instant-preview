@@ -149,3 +149,64 @@ export type ReviewResult = {
     section_6_module_actions: ReviewSection6
   }
 }
+
+// ─── Dashboard Types ────────────────────────────────────────
+
+export type KPI = {
+  key: string
+  label: string
+  value: string
+  delta: string
+  delta_direction: 'up' | 'down' | 'flat'
+  period: string
+}
+
+export type SankeyData = {
+  nodes: { id: string; label: string; layer: number }[]
+  links: { source: string; target: string; value: number }[]
+}
+
+export type FunnelStage = {
+  label: string
+  value: number
+  rate: number
+}
+
+export type RetentionCohort = {
+  name: string
+  d1: number
+  d7: number
+  d30: number
+}
+
+export type Segment = {
+  name: string
+  conversion_rate: number
+  share: number
+}
+
+export type AIInsight = {
+  id: string
+  title: string
+  body: string
+  severity: 'warning' | 'success' | 'info'
+  actions: string[]
+}
+
+export type DashboardData = {
+  kpis: KPI[]
+  causal_decomposition: {
+    default_tab: string
+    sankey: SankeyData
+    node_graph: { description: string }
+    funnel: { stages: FunnelStage[] }
+    multi_layer: { layers: { name: string; items: string[] }[] }
+  }
+  user_data: {
+    funnel: { stages: FunnelStage[] }
+    retention: { cohorts: RetentionCohort[] }
+    segments: Segment[]
+  }
+  bridge_insight: string
+  ai_insights: AIInsight[]
+}
