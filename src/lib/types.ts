@@ -40,3 +40,112 @@ export const initialFilterState = (): FilterState => ({
   channels: new Set(),
   tags: new Set(),
 })
+
+// ─── Assistant Review Types ─────────────────────────────────
+
+export type ScoreItemStatus = 'good' | 'warning' | 'critical'
+
+export type PlanningDocument = {
+  title: string
+  concept: string
+  target: string
+  channel: string
+  appeal_point: string
+  conti: { time: string; scene: string }[]
+  script_full: { time: string; voice: string; visual: string }[]
+  image_placement_plan: { scene: number; visual: string }[]
+  cta_copy: string
+}
+
+export type ReviewSection1 = {
+  label: string
+  alignment_score: number
+  score_max: number
+  score_color: string
+  summary: string
+  item_comments: {
+    item: string
+    status: ScoreItemStatus
+    icon: string
+    text: string
+    guide_ref: string
+  }[]
+}
+
+export type ReviewSection2 = {
+  label: string
+  items: {
+    type: string
+    label: string
+    original: string
+    improved: string
+    reasoning: string
+    expected_uplift: string
+  }[]
+}
+
+export type ReviewSection3 = {
+  label: string
+  total_duration: string
+  channel_optimal: string
+  scenes: {
+    time: string
+    title: string
+    visual: string
+    voice: string
+    key_change_from_original: string
+    rationale: string
+  }[]
+}
+
+export type ReviewSection4 = {
+  label: string
+  subtitle: string
+  items: {
+    ad_id: string
+    brand: string
+    product: string
+    thumbnail: string
+    platform: Platform
+    similarity_score: number
+    running_days: number
+    key_pattern: string
+    differentiator: string
+  }[]
+}
+
+export type ReviewSection5 = {
+  label: string
+  subtitle: string
+  key_difference: string
+  supporting_data: string
+  predicted_metrics: {
+    current_baseline_roas: number
+    if_improvements_applied_roas: number
+    uplift_percentage: string
+    uplift_breakdown: { factor: string; uplift: string }[]
+  }
+  confidence: string
+}
+
+export type ReviewSection6 = {
+  label: string
+  actions: {
+    type: string
+    label: string
+    icon: string
+    params: Record<string, unknown>
+  }[]
+}
+
+export type ReviewResult = {
+  input_planning_document: PlanningDocument
+  review_result: {
+    section_1_score: ReviewSection1
+    section_2_improved_copy: ReviewSection2
+    section_3_scene_structure: ReviewSection3
+    section_4_competitor_comparison: ReviewSection4
+    section_5_internal_top_comparison: ReviewSection5
+    section_6_module_actions: ReviewSection6
+  }
+}

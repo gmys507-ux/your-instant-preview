@@ -1,0 +1,242 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "purpose": "Prism assistant — full review result package (1 set)",
+    "domain": "이삼오구 · D2C 뷰티/건기식",
+    "note": "사용자가 무엇을 입력하든 '검수 시작' 시 이 답변이 단계적으로 reveal됨. 추후 Claude Opus 연결 계획."
+  },
+
+  "input_planning_document": {
+    "title": "비타민 C 세럼 광고 — 30대 직장인 타겟",
+    "concept": "30대 직장인 여성 — 즉각 톤업과 잡티 개선",
+    "target": "30대 여성, 직장인, 평일 저녁 인스타그램 사용자",
+    "channel": "Instagram Reels (메인) + Meta Feed (서브)",
+    "appeal_point": "1주일 사용 시 즉각적인 톤업 효과",
+    "conti": [
+      {"time": "0-3s", "scene": "거울 앞 모델, 잡티 부분 클로즈업"},
+      {"time": "4-7s", "scene": "제품 펌핑, 손등 발색 시연"},
+      {"time": "8-12s", "scene": "사용 1주일 후 비교샷"},
+      {"time": "13-15s", "scene": "할인 카드 + CTA"}
+    ],
+    "script_full": [
+      {"time": "0-3s", "voice": "(자막) 매일 거울 보면서 한숨 쉬셨나요?", "visual": "거울 앞에서 잡티를 만지는 모델 클로즈업"},
+      {"time": "4-7s", "voice": "(VO) 30대 직장인의 피부, 비타민C 세럼이 답입니다.", "visual": "제품 펌핑 + 손등 발색"},
+      {"time": "8-12s", "voice": "(자막) 1주일이면 잡티가 옅어져요", "visual": "Day 1 / Day 7 분할 화면 비교"},
+      {"time": "13-15s", "voice": "(VO) 지금 시작하세요.", "visual": "30% 할인 카드 + '지금 시작하기' CTA 버튼"}
+    ],
+    "image_placement_plan": [
+      {"scene": 1, "visual": "잡티 클로즈업 (Before 강조용)"},
+      {"scene": 2, "visual": "제품 펌핑 슬로모션 + 발색 화면"},
+      {"scene": 3, "visual": "Day 1 vs Day 7 분할 비교"},
+      {"scene": 4, "visual": "할인 카드 + 브랜드 로고"}
+    ],
+    "cta_copy": "지금 시작하기"
+  },
+
+  "review_result": {
+    "section_1_score": {
+      "label": "01 · SCORE",
+      "alignment_score": 73,
+      "score_max": 100,
+      "score_color": "amber",
+      "summary": "기본 골격은 좋으나, 사내 가이드의 핵심 요소 일부 누락",
+      "item_comments": [
+        {
+          "item": "콘티",
+          "status": "good",
+          "icon": "check",
+          "text": "후크 임팩트 양호 — 첫 3초 잡티 클로즈업이 사내 가이드 4.2 (시작 후크)를 충족",
+          "guide_ref": "GUIDE-4.2"
+        },
+        {
+          "item": "카피",
+          "status": "warning",
+          "icon": "alert",
+          "text": "CTA 톤이 사내 가이드 6.1과 어긋남 — 명령형 \"지금 시작하세요\"보다 권유형이 30대 여성 타겟에 +23% 타율",
+          "guide_ref": "GUIDE-6.1"
+        },
+        {
+          "item": "소구점",
+          "status": "critical",
+          "icon": "x",
+          "text": "사내 가이드 핵심 요소인 \"사용자 검증\"이 누락. 타율 상위 12개 콘텐츠 중 11개가 구체 사용자 숫자/후기 인용을 포함",
+          "guide_ref": "GUIDE-2.3"
+        },
+        {
+          "item": "타겟 명확성",
+          "status": "good",
+          "icon": "check",
+          "text": "30대 직장인 페르소나 명확 — 시간대(평일 저녁) 채널 매핑도 적절",
+          "guide_ref": "GUIDE-1.1"
+        }
+      ]
+    },
+
+    "section_2_improved_copy": {
+      "label": "02 · 개선 카피",
+      "items": [
+        {
+          "type": "hook",
+          "label": "후크 카피",
+          "original": "매일 거울 보면서 한숨 쉬셨나요?",
+          "improved": "1,234명 직장인이 1주만에 톤업을 경험했어요 — 다음 차례는?",
+          "reasoning": "GUIDE-2.3 (사용자 검증) + 사내 ROAS 상위 콘텐츠 12건 공통 패턴 — 구체적 숫자 + 1인칭 화법",
+          "expected_uplift": "+18% CTR"
+        },
+        {
+          "type": "cta",
+          "label": "CTA 카피",
+          "original": "지금 시작하세요.",
+          "improved": "오늘 밤부터, 함께 시작해볼래요?",
+          "reasoning": "GUIDE-6.1 (권유형 CTA) — 30대 여성 타겟 대상 명령형 vs 권유형 A/B 결과 권유형 +23% CVR",
+          "expected_uplift": "+11% CVR"
+        },
+        {
+          "type": "headline",
+          "label": "메인 메시지",
+          "original": "30대 직장인의 피부, 비타민C 세럼이 답입니다",
+          "improved": "퇴근 후 5분, 1주일이면 거울이 달라지는 루틴",
+          "reasoning": "GUIDE-3.4 (시간 명시) — 사용 시점·소요 시간 명시 시 30대 여성 타겟 +14% engagement",
+          "expected_uplift": "+8% 시청완료율"
+        }
+      ]
+    },
+
+    "section_3_scene_structure": {
+      "label": "03 · 씬 구성",
+      "total_duration": "15초",
+      "channel_optimal": "Instagram Reels",
+      "scenes": [
+        {
+          "time": "0-3s",
+          "title": "후크 — 사용자 인터뷰",
+          "visual": "30대 여성 직장인 자기 카메라, 화면을 보며 \"저요? 잡티 5년차였어요\" 자막",
+          "voice": "(육성) 저요? 잡티 5년차였어요",
+          "key_change_from_original": "후크를 잡티 클로즈업 → 사용자 인터뷰로 대체 (GUIDE-2.3 충족)",
+          "rationale": "사내 타율 상위 콘텐츠의 첫 3초는 89%가 사람 얼굴 + 1인칭 발화"
+        },
+        {
+          "time": "3-6s",
+          "title": "전 — 잡티 클로즈업",
+          "visual": "Before 비주얼 — 거울 앞 잡티 부위 클로즈업, 자막 \"이 정도였어요\"",
+          "voice": "(자막) 이 정도였어요",
+          "key_change_from_original": "원본의 0-3s 자료를 3-6s로 시프트",
+          "rationale": "Before/After 시각 증거 영역 확보"
+        },
+        {
+          "time": "6-10s",
+          "title": "제품 사용 — 5초 루틴",
+          "visual": "제품 펌핑 + 도포 슬로모션, 자막 \"퇴근 후 5분\"",
+          "voice": "(VO) 퇴근 후 5분, 비타민C 세럼 한 통",
+          "key_change_from_original": "사용 시간 \"5분\" 명시 (GUIDE-3.4 충족)",
+          "rationale": "'시간 명시' 패턴은 직장인 타겟 +14% engagement"
+        },
+        {
+          "time": "10-13s",
+          "title": "후 — 1주일 비교",
+          "visual": "Day 1 / Day 7 분할 화면, 같은 인물의 진짜 변화 강조",
+          "voice": "(자막) 1주일 후, 거울이 달라졌어요",
+          "key_change_from_original": "유지",
+          "rationale": "원본 그대로. Before/After는 사내 가이드 5.1 핵심"
+        },
+        {
+          "time": "13-15s",
+          "title": "CTA — 권유형 + 한정 어필",
+          "visual": "할인 카드 + 카운트다운 \"오늘만 30%\" + 권유형 CTA 텍스트",
+          "voice": "(VO) 오늘 밤부터, 함께 시작해볼래요?",
+          "key_change_from_original": "명령형 CTA → 권유형 + 한정 카운트다운 추가",
+          "rationale": "GUIDE-6.1 (권유형) + 한정 어필이 30대 여성 +23% CVR"
+        }
+      ]
+    },
+
+    "section_4_competitor_comparison": {
+      "label": "04 · 타사 비교",
+      "subtitle": "유사 컨셉 경쟁사 광고 3건",
+      "items": [
+        {
+          "ad_id": "ad_001",
+          "brand": "GLOWTH",
+          "product": "비타민C 세럼",
+          "thumbnail": "/ads/glowth_001.jpg",
+          "platform": "Instagram",
+          "similarity_score": 82,
+          "running_days": 23,
+          "key_pattern": "Before/After + 사용자 인터뷰 — 우리도 채택 권장",
+          "differentiator": "후크에 사용자 발화 포함, 사내 타율 패턴과 일치"
+        },
+        {
+          "ad_id": "ad_021",
+          "brand": "SKINEDIT",
+          "product": "비타민C 토너",
+          "thumbnail": "/ads/skinedit_021.jpg",
+          "platform": "TikTok",
+          "similarity_score": 76,
+          "running_days": 26,
+          "key_pattern": "장기 사용 후기 (6개월 비교) — 우리는 1주 어필이라 차별화 포지션",
+          "differentiator": "장기 vs 단기 효과 어필 차이"
+        },
+        {
+          "ad_id": "ad_005",
+          "brand": "SKINEDIT",
+          "product": "리프팅 앰플",
+          "thumbnail": "/ads/skinedit_005.jpg",
+          "platform": "Instagram",
+          "similarity_score": 68,
+          "running_days": 18,
+          "key_pattern": "야간 루틴 어필 — 우리도 \"퇴근 후 5분\" 시간대 어필 변경 후 더 가까워짐",
+          "differentiator": "야간 루틴 컨셉의 강력함"
+        }
+      ]
+    },
+
+    "section_5_internal_top_comparison": {
+      "label": "05 · 사내 타율 상위 비교",
+      "subtitle": "우리 회사 ROAS 상위 10% 콘텐츠와 비교",
+      "key_difference": "첫 3초 후크에 사용자 인터뷰/실명 인용 패턴 부재",
+      "supporting_data": "ROAS 상위 12개 콘텐츠 중 11개가 사용자 발화 후크 포함 (92%)",
+      "predicted_metrics": {
+        "current_baseline_roas": 3.2,
+        "if_improvements_applied_roas": 4.6,
+        "uplift_percentage": "+44%",
+        "uplift_breakdown": [
+          {"factor": "사용자 인터뷰 후크", "uplift": "+18% CTR"},
+          {"factor": "권유형 CTA", "uplift": "+11% CVR"},
+          {"factor": "시간 명시 (\"5분\")", "uplift": "+8% 완료율"},
+          {"factor": "한정 어필 카운트다운", "uplift": "+7% CVR"}
+        ]
+      },
+      "confidence": "높음 — 사내 12개 상위 콘텐츠 패턴 + A/B 테스트 데이터 기반"
+    },
+
+    "section_6_module_actions": {
+      "label": "06 · 다음 액션",
+      "actions": [
+        {
+          "type": "navigate_to_gallery",
+          "label": "갤러리에서 유사 광고 더 보기",
+          "icon": "image",
+          "params": {"filter": {"concept": "Before/After + 사용자 인터뷰"}}
+        },
+        {
+          "type": "navigate_to_dashboard",
+          "label": "대시보드에서 ROAS 시뮬레이션",
+          "icon": "chart-bar",
+          "params": {"simulation": "improvements_applied"}
+        },
+        {
+          "type": "download",
+          "label": "개선안 PDF 다운로드",
+          "icon": "download",
+          "params": {"format": "pdf"}
+        },
+        {
+          "type": "send_to_team",
+          "label": "팀에 공유 (Slack)",
+          "icon": "send",
+          "params": {"channel": "#마케팅-기획"}
+        }
+      ]
+    }
+  }
+}
