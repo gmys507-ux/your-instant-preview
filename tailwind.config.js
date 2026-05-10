@@ -46,8 +46,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Pretendard Variable', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'system-ui', 'sans-serif'],
-        serif: ['Fraunces', 'Pretendard', 'Georgia', 'serif'],
+        sans: ['Paperlogy', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'system-ui', 'sans-serif'],
+        serif: ['Fraunces', 'Paperlogy', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'Menlo', 'Consolas', 'monospace'],
         inter: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
