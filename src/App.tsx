@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AppShell } from './components/layout/AppShell'
 import { HomePage } from './pages/HomePage'
 import { GalleryPage } from './pages/GalleryPage'
@@ -23,7 +23,7 @@ function HomeWithTour() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppShell>
         <Routes>
           <Route path="/" element={<HomeWithTour />} />
@@ -32,7 +32,7 @@ function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
       </AppShell>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
