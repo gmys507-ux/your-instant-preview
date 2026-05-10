@@ -5,12 +5,18 @@
 @tailwind utilities;
 
 html {
-  background: var(--bg);
+  background: #FAFAFF;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
+  min-height: 100svh;
+  background:
+    radial-gradient(ellipse 80% 40% at 0% 0%, rgba(91, 79, 229, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 100% 12%, rgba(236, 72, 153, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(91, 79, 229, 0.04) 0%, transparent 70%),
+    linear-gradient(180deg, #FAFAFF 0%, #F4F2FB 60%, #FAFAFF 100%);
+  background-attachment: fixed;
   color: var(--ink);
   font-family: 'Paperlogy', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: var(--fs-body);

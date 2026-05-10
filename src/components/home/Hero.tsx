@@ -60,8 +60,8 @@ export function Hero() {
             </p>
           </div>
 
-          {/* RIGHT — 흰 floating AI 카드 */}
-          <div className="bg-paper rounded-card border border-rule-light shadow-card-hover p-6">
+          {/* RIGHT — 흰 floating AI 카드 (글라스) */}
+          <div className="bg-paper/85 backdrop-blur-md rounded-card border border-white/60 shadow-card-hover p-6">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-7 h-7 rounded-lg bg-indigo-bg flex items-center justify-center">
                 <Sparkles size={14} className="text-indigo" />

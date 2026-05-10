@@ -6,6 +6,7 @@ type Props = {
   onClick?: () => void
   hover?: boolean
   padding?: 'sm' | 'md' | 'lg'
+  variant?: 'solid' | 'glass'
 }
 
 const paddingClass = {
@@ -15,18 +16,32 @@ const paddingClass = {
 } as const
 
 /**
- * Production-grade card. 12px radius, subtle baseline shadow,
- * stronger shadow + lift on hover (when interactive).
+ * Production-grade card with two variants:
+ * - solid: opaque white, traditional
+ * - glass: semi-transparent + backdrop-blur (over gradient bg)
  */
-export function Card({ children, className = '', onClick, hover = true, padding = 'lg' }: Props) {
+export function Card({
+  children,
+  className = '',
+  onClick,
+  hover = true,
+  padding = 'lg',
+  variant = 'glass',
+}: Props) {
   const interactive = onClick && hover
   const hoverClass = interactive
-    ? 'hover:shadow-card-hover hover:-translate-y-0.5 cursor-pointer'
+    ? 'hover:shadow-card-hover hover:-translate-y-0.5 cursor-pointer hover:bg-paper'
     : ''
+
+  const variantClass =
+    variant === 'glass'
+      ? 'bg-paper/85 border border-white/60 backdrop-blur-md'
+      : 'bg-paper border border-rule'
+
   return (
     <div
       onClick={onClick}
-      className={`bg-paper border border-rule rounded-card ${paddingClass[padding]} shadow-card transition-all duration-200 ease-out-soft ${hoverClass} ${className}`}
+      className={`${variantClass} rounded-card ${paddingClass[padding]} shadow-card transition-all duration-200 ease-out-soft ${hoverClass} ${className}`}
     >
       {children}
     </div>

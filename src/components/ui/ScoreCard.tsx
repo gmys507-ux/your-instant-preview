@@ -23,7 +23,7 @@ const arrow = { up: '↑', down: '↓', flat: '→' } as const
 export function ScoreCard({ label, value, unit, delta, sparkline, delay = 0 }: Props) {
   return (
     <div
-      className="bg-paper border border-rule rounded-card p-5 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 cursor-pointer animate-fade-in-up"
+      className="bg-paper/85 border border-white/60 backdrop-blur-md rounded-card p-5 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 hover:bg-paper transition-all duration-200 cursor-pointer animate-fade-in-up"
       style={{ animationDelay: `${delay}ms` }}
     >
       {/* label */}
