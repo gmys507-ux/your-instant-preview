@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "ad_001",
+    "brand": "GLOWTH",
+    "product": "비타민C 세럼",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/glowth_001.jpg",
+    "video_url": "/ads/glowth_001.gif",
+    "copy_hook": "바르자마자 톤업, 1주일이면 잡티가",
+    "concept": "Before/After + 사용자 인터뷰",
+    "conti": [
+      "0-3s: 거울 앞 잡티 클로즈업",
+      "4-7s: 제품 펌핑·발색",
+      "8-15s: 1주일 후 비교샷",
+      "16-18s: 할인 카드 + CTA"
+    ],
+    "appeal_points": [
+      "즉각 효과",
+      "사용자 검증",
+      "할인 어필"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.4M",
+      "estimated_spend": "₩12M",
+      "running_days": 23,
+      "engagement_rate": "4.2%"
+    },
+    "alignment_score": 67,
+    "tags": [
+      "뷰티",
+      "스킨케어",
+      "30대",
+      "여성"
+    ]
+  },
+  {
+    "id": "ad_002",
+    "brand": "BREU",
+    "product": "콜라겐 멀티스틱",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/breu_002.jpg",
+    "copy_hook": "1포에 콜라겐 5,000mg, 3일이면 차이가",
+    "concept": "사용자 챌린지 + Day-by-Day 비교",
+    "conti": [
+      "0-2s: '저랑 같이 3일 챌린지?' 후크",
+      "3-7s: 제품 언박싱 + 섭취",
+      "8-12s: Day1 → Day3 비교샷",
+      "13-15s: '댓글로 후기 받기' CTA"
+    ],
+    "appeal_points": [
+      "성분 신뢰",
+      "단기 효과",
+      "참여 유도"
+    ],
+    "metrics": {
+      "estimated_impressions": "3.8M",
+      "estimated_spend": "₩18M",
+      "running_days": 38,
+      "engagement_rate": "6.8%"
+    },
+    "alignment_score": 82,
+    "tags": [
+      "건기식",
+      "콜라겐",
+      "20대",
+      "30대",
+      "여성"
+    ]
+  },
+  {
+    "id": "ad_003",
+    "brand": "VITAVITA",
+    "product": "이너 글로우 비타민",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/vitavita_003.jpg",
+    "copy_hook": "안에서부터 바뀌는 광채, 30일 챌린지",
+    "concept": "전문가 인터뷰 + 임상 데이터",
+    "conti": [
+      "0-4s: 영양사 등장 + '왜 비타민이 부족한가'",
+      "5-12s: 임상 결과 그래프 + 해설",
+      "13-25s: 사용자 후기 3명 빠른 전환",
+      "26-30s: 30일 챌린지 + 30% 할인"
+    ],
+    "appeal_points": [
+      "전문가 신뢰",
+      "데이터 근거",
+      "장기 가치"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.6M",
+      "estimated_spend": "₩9M",
+      "running_days": 12,
+      "engagement_rate": "3.1%"
+    },
+    "alignment_score": 71,
+    "tags": [
+      "건기식",
+      "비타민",
+      "30대",
+      "40대",
+      "전문가"
+    ]
+  },
+  {
+    "id": "ad_004",
+    "brand": "MELLO",
+    "product": "수면 멜라토닌",
+    "platform": "YouTube",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/mello_004.jpg",
+    "copy_hook": "잠 못 드는 밤, 5mg면 충분",
+    "concept": "야간 ASMR + 제품 노출",
+    "conti": [
+      "0-3s: 어두운 침실, 시계 02:14",
+      "4-8s: 제품 노출 + 톤다운 보이스오버",
+      "9-13s: 사용자 후기 3개 자막",
+      "14-15s: '오늘 밤부터' CTA"
+    ],
+    "appeal_points": [
+      "감성 공감",
+      "시간대 타겟팅",
+      "낮은 부담감"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.1M",
+      "estimated_spend": "₩14M",
+      "running_days": 27,
+      "engagement_rate": "5.4%"
+    },
+    "alignment_score": 76,
+    "tags": [
+      "건기식",
+      "수면",
+      "30대",
+      "여성",
+      "남성"
+    ]
+  },
+  {
+    "id": "ad_005",
+    "brand": "SKINEDIT",
+    "product": "리프팅 앰플",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/skinedit_005.jpg",
+    "copy_hook": "바르고 자면, 아침이 다른 피부",
+    "concept": "야간 루틴 + Before/After",
+    "conti": [
+      "0-3s: 파자마 입은 모델 + 거울",
+      "4-9s: 제품 도포 슬로모션",
+      "10-14s: 아침 거울 비교샷",
+      "15-18s: '오늘 밤부터' + 30% 할인"
+    ],
+    "appeal_points": [
+      "루틴 통합",
+      "즉각 효과",
+      "수면 중 효과"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.9M",
+      "estimated_spend": "₩11M",
+      "running_days": 18,
+      "engagement_rate": "4.8%"
+    },
+    "alignment_score": 88,
+    "tags": [
+      "뷰티",
+      "안티에이징",
+      "30대",
+      "40대",
+      "여성"
+    ]
+  },
+  {
+    "id": "ad_006",
+    "brand": "BLOOM&LIN",
+    "product": "프로바이오틱스",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/bloomlin_006.jpg",
+    "copy_hook": "장이 좋아지면 피부도 달라져요",
+    "concept": "장-피부 축 + 인포그래픽",
+    "conti": [
+      "0-5s: 장-피부 연결 인포그래픽",
+      "6-12s: 제품 + 1일 1포 시각화",
+      "13-18s: 4주 후 피부 변화 텍스트 후기"
+    ],
+    "appeal_points": [
+      "과학적 메커니즘",
+      "이중 효과",
+      "정기 구독"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.3M",
+      "estimated_spend": "₩7M",
+      "running_days": 15,
+      "engagement_rate": "2.9%"
+    },
+    "alignment_score": 64,
+    "tags": [
+      "건기식",
+      "장건강",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_007",
+    "brand": "PURE:K",
+    "product": "티트리 클렌징폼",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/purek_007.jpg",
+    "copy_hook": "1주일이면 트러블이 진정되는 걸 느껴요",
+    "concept": "10대 트러블 사용자 인터뷰",
+    "conti": [
+      "0-3s: '저는 5년 동안 트러블을…'",
+      "4-9s: 제품 사용 루틴",
+      "10-14s: 1주일 후 피부 비교",
+      "15-15s: '@pure_k 더 보기'"
+    ],
+    "appeal_points": [
+      "타겟 페르소나 명확",
+      "솔직 후기",
+      "공감 유도"
+    ],
+    "metrics": {
+      "estimated_impressions": "4.2M",
+      "estimated_spend": "₩16M",
+      "running_days": 31,
+      "engagement_rate": "7.2%"
+    },
+    "alignment_score": 79,
+    "tags": [
+      "뷰티",
+      "트러블",
+      "10대",
+      "20대"
+    ]
+  },
+  {
+    "id": "ad_008",
+    "brand": "DEWY",
+    "product": "수분 토너",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Story",
+    "thumbnail": "/ads/dewy_008.jpg",
+    "copy_hook": "건조한 사무실, 5초 보충 토너",
+    "concept": "오피스 페르소나 + 휴대성",
+    "conti": [
+      "0-2s: 사무실 책상, 건조한 피부 클로즈업",
+      "3-6s: 가방에서 토너 꺼내기",
+      "7-10s: 5초 도포",
+      "11-12s: '책상 위 필수템' CTA"
+    ],
+    "appeal_points": [
+      "상황 공감",
+      "휴대성",
+      "시간 절약"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.8M",
+      "estimated_spend": "₩10M",
+      "running_days": 22,
+      "engagement_rate": "4.0%"
+    },
+    "alignment_score": 73,
+    "tags": [
+      "뷰티",
+      "수분",
+      "20대",
+      "30대",
+      "직장인"
+    ]
+  },
+  {
+    "id": "ad_009",
+    "brand": "GLOWTH",
+    "product": "선쿠션 SPF50",
+    "platform": "YouTube",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/glowth_009.jpg",
+    "copy_hook": "한 번 바르면 8시간, 끈적임 없이",
+    "concept": "야외 활동 + 지속력 테스트",
+    "conti": [
+      "0-3s: 등산복 차림 모델 + 햇빛",
+      "4-9s: 쿠션 도포 → 산행 4시간",
+      "10-13s: 산 정상에서 셀카 — 묻어남 X",
+      "14-15s: 'SPF50, 8시간' 텍스트"
+    ],
+    "appeal_points": [
+      "지속력",
+      "비끈적임",
+      "야외 적합"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.7M",
+      "estimated_spend": "₩13M",
+      "running_days": 25,
+      "engagement_rate": "5.1%"
+    },
+    "alignment_score": 81,
+    "tags": [
+      "뷰티",
+      "선케어",
+      "20대",
+      "30대",
+      "야외"
+    ]
+  },
+  {
+    "id": "ad_010",
+    "brand": "BREU",
+    "product": "히알루론산 앰플",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/breu_010.jpg",
+    "copy_hook": "마른 피부에 물을 채우는 앰플",
+    "concept": "수분 충전 비주얼 메타포",
+    "conti": [
+      "0-4s: 마른 잎이 물에 들어가 살아남",
+      "5-9s: 같은 메타포 — 피부 + 앰플",
+      "10-14s: 1방울 도포 + 흡수",
+      "15-18s: 사용 후 피부 비교"
+    ],
+    "appeal_points": [
+      "비주얼 메타포",
+      "수분 강조",
+      "감성 어필"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.0M",
+      "estimated_spend": "₩11M",
+      "running_days": 19,
+      "engagement_rate": "4.6%"
+    },
+    "alignment_score": 84,
+    "tags": [
+      "뷰티",
+      "수분",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_011",
+    "brand": "VITAVITA",
+    "product": "철분 부스터",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/vitavita_011.jpg",
+    "copy_hook": "오후 3시 졸음, 철분 부족이에요",
+    "concept": "직장인 페르소나 + 증상 매칭",
+    "conti": [
+      "0-3s: 회의 중 졸린 직장인",
+      "4-9s: '혹시 이런 증상 있으세요?' 체크리스트",
+      "10-15s: 제품 + 효과 메커니즘",
+      "16-20s: '오늘부터' CTA"
+    ],
+    "appeal_points": [
+      "증상 인식",
+      "전문성",
+      "직장인 타겟"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.5M",
+      "estimated_spend": "₩8M",
+      "running_days": 21,
+      "engagement_rate": "3.4%"
+    },
+    "alignment_score": 69,
+    "tags": [
+      "건기식",
+      "철분",
+      "20대",
+      "30대",
+      "직장인"
+    ]
+  },
+  {
+    "id": "ad_012",
+    "brand": "MELLO",
+    "product": "스트레스 케어 패치",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/mello_012.jpg",
+    "copy_hook": "회의 5분 전, 손목에 붙이세요",
+    "concept": "위기 순간 솔루션",
+    "conti": [
+      "0-2s: 시계 09:55 + 긴장한 표정",
+      "3-7s: 패치 부착 + 호흡",
+      "8-12s: 회의실 입장, 차분한 표정",
+      "13-15s: '내 회의 친구' CTA"
+    ],
+    "appeal_points": [
+      "타이밍 명확",
+      "사용성",
+      "감정 어필"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.7M",
+      "estimated_spend": "₩10M",
+      "running_days": 14,
+      "engagement_rate": "5.9%"
+    },
+    "alignment_score": 77,
+    "tags": [
+      "건기식",
+      "스트레스",
+      "20대",
+      "30대",
+      "직장인"
+    ]
+  },
+  {
+    "id": "ad_013",
+    "brand": "SKINEDIT",
+    "product": "주름 개선 크림",
+    "platform": "YouTube",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/skinedit_013.jpg",
+    "copy_hook": "주름이 펴지는 게 보여요, 8주",
+    "concept": "임상 데이터 + 시각적 변화",
+    "conti": [
+      "0-4s: 임상 8주 결과 그래프",
+      "5-12s: Week 0 → Week 4 → Week 8 비교",
+      "13-18s: 사용자 인터뷰 1명 (40대)",
+      "19-25s: 30% 할인 + 무료 체험"
+    ],
+    "appeal_points": [
+      "임상 신뢰",
+      "장기 효과",
+      "시각적 증거"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.1M",
+      "estimated_spend": "₩6M",
+      "running_days": 9,
+      "engagement_rate": "2.6%"
+    },
+    "alignment_score": 58,
+    "tags": [
+      "뷰티",
+      "안티에이징",
+      "40대",
+      "50대"
+    ]
+  },
+  {
+    "id": "ad_014",
+    "brand": "DEWY",
+    "product": "수분 마스크팩",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/dewy_014.jpg",
+    "copy_hook": "오늘 밤, 마스크팩 한 장",
+    "concept": "야간 루틴 + 다음날 효과",
+    "conti": [
+      "0-3s: 침대 위 마스크팩 클로즈업",
+      "4-8s: 부착 + 휴식 ASMR",
+      "9-13s: 다음날 아침 메이크업",
+      "14-15s: '잠들기 전 한 장' CTA"
+    ],
+    "appeal_points": [
+      "루틴 명확",
+      "감각 어필",
+      "다음날 효과"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.3M",
+      "estimated_spend": "₩12M",
+      "running_days": 28,
+      "engagement_rate": "4.5%"
+    },
+    "alignment_score": 75,
+    "tags": [
+      "뷰티",
+      "마스크팩",
+      "20대",
+      "30대"
+    ]
+  },
+  {
+    "id": "ad_015",
+    "brand": "BLOOM&LIN",
+    "product": "오메가-3",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/bloomlin_015.jpg",
+    "copy_hook": "비린맛 NO, 캡슐형 오메가-3",
+    "concept": "단점 해결 어필",
+    "conti": [
+      "0-4s: 비린맛에 인상 쓰는 사용자",
+      "5-9s: '이제 비린맛 없어요' + 제품",
+      "10-15s: 매일 1캡슐 루틴",
+      "16-18s: 30일 정기 구독 30% 할인"
+    ],
+    "appeal_points": [
+      "단점 해소",
+      "복용 편의",
+      "정기 구독"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.4M",
+      "estimated_spend": "₩7M",
+      "running_days": 16,
+      "engagement_rate": "3.0%"
+    },
+    "alignment_score": 66,
+    "tags": [
+      "건기식",
+      "오메가",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_016",
+    "brand": "PURE:K",
+    "product": "토너패드",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/purek_016.jpg",
+    "copy_hook": "각질 정리, 1번 닦으면 차이",
+    "concept": "Before/After 즉각",
+    "conti": [
+      "0-2s: 거친 피부 클로즈업",
+      "3-6s: 토너패드 닦기",
+      "7-10s: 면봉 발색 비교",
+      "11-13s: '한 번에 차이' CTA"
+    ],
+    "appeal_points": [
+      "즉각 효과",
+      "시각적 증거",
+      "사용 간편"
+    ],
+    "metrics": {
+      "estimated_impressions": "3.5M",
+      "estimated_spend": "₩15M",
+      "running_days": 24,
+      "engagement_rate": "6.4%"
+    },
+    "alignment_score": 80,
+    "tags": [
+      "뷰티",
+      "각질",
+      "20대",
+      "30대"
+    ]
+  },
+  {
+    "id": "ad_017",
+    "brand": "GLOWTH",
+    "product": "립 플럼퍼",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/glowth_017.jpg",
+    "copy_hook": "5분이면 도톰해지는 입술",
+    "concept": "즉각 변화 + 셀카 연출",
+    "conti": [
+      "0-3s: 평소 입술 셀카",
+      "4-7s: 립 플럼퍼 도포",
+      "8-11s: 5분 후 비교 셀카",
+      "12-13s: '데이트 전 필수' CTA"
+    ],
+    "appeal_points": [
+      "즉각 효과",
+      "셀카 어필",
+      "특별한 날"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.6M",
+      "estimated_spend": "₩11M",
+      "running_days": 17,
+      "engagement_rate": "5.2%"
+    },
+    "alignment_score": 72,
+    "tags": [
+      "뷰티",
+      "립케어",
+      "20대",
+      "30대"
+    ]
+  },
+  {
+    "id": "ad_018",
+    "brand": "BREU",
+    "product": "코엔자임Q10",
+    "platform": "YouTube",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/breu_018.jpg",
+    "copy_hook": "체력 떨어진 30대, Q10이 답",
+    "concept": "연령별 솔루션 어필",
+    "conti": [
+      "0-3s: 30대 직장인의 피곤한 하루",
+      "4-9s: '왜 30대부터 Q10이?' 메커니즘",
+      "10-15s: 4주 사용자 후기",
+      "16-20s: 첫 구매 50% 할인"
+    ],
+    "appeal_points": [
+      "연령 타겟",
+      "메커니즘 이해",
+      "할인 강조"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.2M",
+      "estimated_spend": "₩6M",
+      "running_days": 11,
+      "engagement_rate": "2.7%"
+    },
+    "alignment_score": 61,
+    "tags": [
+      "건기식",
+      "Q10",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_019",
+    "brand": "VITAVITA",
+    "product": "비오틴 헤어 영양제",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Story",
+    "thumbnail": "/ads/vitavita_019.jpg",
+    "copy_hook": "탈모 신호, 비오틴이 답",
+    "concept": "증상 + 솔루션",
+    "conti": [
+      "0-3s: 빠지는 머리카락 클로즈업",
+      "4-8s: 비오틴 효능 설명",
+      "9-13s: 3개월 후기",
+      "14-15s: '오늘부터' CTA"
+    ],
+    "appeal_points": [
+      "증상 공감",
+      "장기 솔루션",
+      "신뢰 데이터"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.6M",
+      "estimated_spend": "₩9M",
+      "running_days": 20,
+      "engagement_rate": "3.6%"
+    },
+    "alignment_score": 70,
+    "tags": [
+      "건기식",
+      "헤어케어",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_020",
+    "brand": "MELLO",
+    "product": "마그네슘",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/mello_020.jpg",
+    "copy_hook": "다리 저림, 마그네슘이 부족해요",
+    "concept": "증상 매칭 + 영양소",
+    "conti": [
+      "0-4s: 밤에 다리 저림 표현",
+      "5-10s: 마그네슘 부족 체크리스트",
+      "11-16s: 제품 + 1일 1포",
+      "17-20s: '오늘 밤부터'"
+    ],
+    "appeal_points": [
+      "증상 매칭",
+      "단순 솔루션",
+      "편의성"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.3M",
+      "estimated_spend": "₩7M",
+      "running_days": 13,
+      "engagement_rate": "3.2%"
+    },
+    "alignment_score": 65,
+    "tags": [
+      "건기식",
+      "마그네슘",
+      "30대",
+      "40대",
+      "50대"
+    ]
+  },
+  {
+    "id": "ad_021",
+    "brand": "SKINEDIT",
+    "product": "비타민C 토너",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/skinedit_021.jpg",
+    "copy_hook": "기미 잡티, 진짜 옅어져요",
+    "concept": "장기 사용 후기 + 시각 증거",
+    "conti": [
+      "0-2s: '6개월 사용한 결과 보여드릴게요'",
+      "3-7s: Day 0 → Month 3 → Month 6 비교",
+      "8-12s: 사용 루틴 정리",
+      "13-15s: 6개월 정기 구독 CTA"
+    ],
+    "appeal_points": [
+      "장기 신뢰",
+      "시각 증거",
+      "구독 유도"
+    ],
+    "metrics": {
+      "estimated_impressions": "3.1M",
+      "estimated_spend": "₩14M",
+      "running_days": 26,
+      "engagement_rate": "5.8%"
+    },
+    "alignment_score": 85,
+    "tags": [
+      "뷰티",
+      "기미",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_022",
+    "brand": "DEWY",
+    "product": "수분 미스트",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/dewy_022.jpg",
+    "copy_hook": "에어컨 사무실, 한 번 뿌리면 OK",
+    "concept": "여름 오피스 페르소나",
+    "conti": [
+      "0-3s: 에어컨 + 건조한 피부",
+      "4-7s: 미스트 분사 슬로모션",
+      "8-11s: 메이크업 위로 흡수",
+      "12-13s: '여름 책상 필수템' CTA"
+    ],
+    "appeal_points": [
+      "계절성",
+      "오피스 타겟",
+      "사용 간편"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.0M",
+      "estimated_spend": "₩10M",
+      "running_days": 18,
+      "engagement_rate": "4.3%"
+    },
+    "alignment_score": 74,
+    "tags": [
+      "뷰티",
+      "수분",
+      "여름",
+      "직장인"
+    ]
+  },
+  {
+    "id": "ad_023",
+    "brand": "BLOOM&LIN",
+    "product": "유산균 키즈",
+    "platform": "YouTube",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/bloomlin_023.jpg",
+    "copy_hook": "아이 장 건강, 엄마가 알아야 할 것",
+    "concept": "엄마 페르소나 + 신뢰 정보",
+    "conti": [
+      "0-4s: 아이를 보는 엄마 표정",
+      "5-12s: 키즈 장건강 정보 그래픽",
+      "13-20s: 사용자 엄마 인터뷰",
+      "21-25s: 키즈 정기 구독"
+    ],
+    "appeal_points": [
+      "엄마 페르소나",
+      "전문성",
+      "신뢰 어필"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.0M",
+      "estimated_spend": "₩5M",
+      "running_days": 8,
+      "engagement_rate": "2.4%"
+    },
+    "alignment_score": 55,
+    "tags": [
+      "건기식",
+      "키즈",
+      "30대",
+      "40대",
+      "엄마"
+    ]
+  },
+  {
+    "id": "ad_024",
+    "brand": "PURE:K",
+    "product": "스팟 트리트먼트",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Story",
+    "thumbnail": "/ads/purek_024.jpg",
+    "copy_hook": "여드름 위 1방울, 다음날 가라앉아요",
+    "concept": "Before/Next-day",
+    "conti": [
+      "0-2s: 여드름 클로즈업",
+      "3-5s: 트리트먼트 1방울 도포",
+      "6-9s: 다음날 비교샷",
+      "10-12s: '여드름 응급용' CTA"
+    ],
+    "appeal_points": [
+      "응급 솔루션",
+      "즉각 효과",
+      "스팟 케어"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.8M",
+      "estimated_spend": "₩13M",
+      "running_days": 21,
+      "engagement_rate": "5.5%"
+    },
+    "alignment_score": 78,
+    "tags": [
+      "뷰티",
+      "여드름",
+      "10대",
+      "20대"
+    ]
+  },
+  {
+    "id": "ad_025",
+    "brand": "GLOWTH",
+    "product": "아이크림",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/glowth_025.jpg",
+    "copy_hook": "다크서클, 이 아이크림 하나면",
+    "concept": "단일 솔루션 어필",
+    "conti": [
+      "0-4s: 거울 앞 다크서클",
+      "5-10s: 아이크림 도포 루틴",
+      "11-16s: 4주 후 비교",
+      "17-20s: 첫 구매 30% 할인"
+    ],
+    "appeal_points": [
+      "타겟 부위 명확",
+      "단순 솔루션",
+      "할인"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.7M",
+      "estimated_spend": "₩9M",
+      "running_days": 19,
+      "engagement_rate": "3.8%"
+    },
+    "alignment_score": 68,
+    "tags": [
+      "뷰티",
+      "아이케어",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_026",
+    "brand": "BREU",
+    "product": "프로틴 쉐이크",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/breu_026.jpg",
+    "copy_hook": "근손실 NO, 1포로 단백질 25g",
+    "concept": "운동인 페르소나",
+    "conti": [
+      "0-2s: 운동 후 갈증",
+      "3-6s: 1포 흔들어 마시기",
+      "7-10s: 단백질 25g 시각화",
+      "11-13s: '운동 후 5분 안에' CTA"
+    ],
+    "appeal_points": [
+      "타이밍 명확",
+      "수치 강조",
+      "운동인 타겟"
+    ],
+    "metrics": {
+      "estimated_impressions": "2.4M",
+      "estimated_spend": "₩11M",
+      "running_days": 22,
+      "engagement_rate": "5.0%"
+    },
+    "alignment_score": 76,
+    "tags": [
+      "건기식",
+      "프로틴",
+      "20대",
+      "30대",
+      "운동"
+    ]
+  },
+  {
+    "id": "ad_027",
+    "brand": "VITAVITA",
+    "product": "이너 뷰티 콜라겐",
+    "platform": "YouTube",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/vitavita_027.jpg",
+    "copy_hook": "안에서부터 채우는 콜라겐, 1일 1포",
+    "concept": "내·외 동시 어필",
+    "conti": [
+      "0-4s: '바르는 것만으론 부족해요'",
+      "5-10s: 안에서부터 채우는 메커니즘",
+      "11-16s: 8주 후 피부 변화",
+      "17-22s: 정기 구독 50% 할인"
+    ],
+    "appeal_points": [
+      "이너 뷰티",
+      "지속 효과",
+      "구독"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.4M",
+      "estimated_spend": "₩8M",
+      "running_days": 14,
+      "engagement_rate": "3.3%"
+    },
+    "alignment_score": 67,
+    "tags": [
+      "건기식",
+      "콜라겐",
+      "30대",
+      "40대"
+    ]
+  },
+  {
+    "id": "ad_028",
+    "brand": "MELLO",
+    "product": "수면 안대",
+    "platform": "Instagram",
+    "country": "KR",
+    "channel": "Reels",
+    "thumbnail": "/ads/mello_028.jpg",
+    "copy_hook": "도시의 빛, 안대 한 장으로 컷",
+    "concept": "도시 거주자 페르소나",
+    "conti": [
+      "0-3s: 야간 도시 빛 + 잠 못 드는 모습",
+      "4-7s: 안대 착용 + 어둠",
+      "8-11s: 깊은 잠 표현",
+      "12-13s: '도시인의 안대' CTA"
+    ],
+    "appeal_points": [
+      "페르소나 명확",
+      "감각 어필",
+      "단순 솔루션"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.9M",
+      "estimated_spend": "₩9M",
+      "running_days": 16,
+      "engagement_rate": "4.4%"
+    },
+    "alignment_score": 71,
+    "tags": [
+      "수면",
+      "20대",
+      "30대",
+      "도시"
+    ]
+  },
+  {
+    "id": "ad_029",
+    "brand": "SKINEDIT",
+    "product": "엑스폴리에이팅 패드",
+    "platform": "TikTok",
+    "country": "KR",
+    "channel": "Shorts",
+    "thumbnail": "/ads/skinedit_029.jpg",
+    "copy_hook": "묵은 각질, 일주일이면 광채",
+    "concept": "각질 제거 시각화",
+    "conti": [
+      "0-2s: 거친 피부 표면",
+      "3-6s: 패드 닦기 + 각질 시각화",
+      "7-10s: 1주일 후 광채 피부",
+      "11-13s: '주 2회면 충분' CTA"
+    ],
+    "appeal_points": [
+      "시각 증거",
+      "주기 명확",
+      "결과 강조"
+    ],
+    "metrics": {
+      "estimated_impressions": "3.0M",
+      "estimated_spend": "₩13M",
+      "running_days": 23,
+      "engagement_rate": "5.7%"
+    },
+    "alignment_score": 83,
+    "tags": [
+      "뷰티",
+      "각질",
+      "20대",
+      "30대"
+    ]
+  },
+  {
+    "id": "ad_030",
+    "brand": "DEWY",
+    "product": "수분 크림",
+    "platform": "Meta",
+    "country": "KR",
+    "channel": "Feed",
+    "thumbnail": "/ads/dewy_030.jpg",
+    "copy_hook": "건성 피부, 이 한 통이면",
+    "concept": "단일 제품 신뢰",
+    "conti": [
+      "0-4s: 건성 피부 사용자 인터뷰",
+      "5-10s: 제품 도포 루틴",
+      "11-16s: 4주 후 변화",
+      "17-20s: '한 통이면 두 달' CTA"
+    ],
+    "appeal_points": [
+      "페르소나 명확",
+      "단순 메시지",
+      "가성비"
+    ],
+    "metrics": {
+      "estimated_impressions": "1.5M",
+      "estimated_spend": "₩7M",
+      "running_days": 12,
+      "engagement_rate": "3.1%"
+    },
+    "alignment_score": 63,
+    "tags": [
+      "뷰티",
+      "수분",
+      "30대",
+      "40대",
+      "건성"
+    ]
+  }
+]
