@@ -1,86 +1,89 @@
 import { Sparkles, ArrowRight } from 'lucide-react'
 
 /**
- * 홈 Hero — 다크 그라데이션 모닝 브리핑.
- * 인사말 없이 product-grade 정보 카드로 압축.
+ * 홈 Hero — Light lavender 그라데이션 + 거대 한글 헤딩 + 흰 floating 카드.
+ * 참고: Lovable × Amplitude 해커톤 페이지 톤.
  */
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-ink text-paper rounded-card mt-6 mx-8 border border-white/8">
-      {/* Radial gradient mesh */}
+    <section
+      className="relative overflow-hidden rounded-card mt-6 mx-8 border border-rule-light"
+      style={{
+        background: `
+          linear-gradient(135deg, #F0F0FF 0%, #E8E5FB 35%, #F4ECFF 65%, #FFEAF5 100%)
+        `,
+      }}
+    >
+      {/* Soft accent glows */}
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            radial-gradient(ellipse 70% 60% at 15% 20%, rgba(91, 79, 229, 0.5) 0%, transparent 60%),
-            radial-gradient(ellipse 55% 65% at 85% 80%, rgba(236, 72, 153, 0.32) 0%, transparent 65%),
-            radial-gradient(ellipse 45% 45% at 50% 100%, rgba(46, 37, 128, 0.55) 0%, transparent 70%)
+            radial-gradient(ellipse 50% 60% at 12% 18%, rgba(91, 79, 229, 0.18) 0%, transparent 65%),
+            radial-gradient(ellipse 45% 55% at 88% 80%, rgba(236, 72, 153, 0.14) 0%, transparent 70%)
           `,
         }}
       />
-      {/* Subtle noise grain */}
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none mix-blend-overlay opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>\")",
-        }}
-      />
 
-      <div className="relative px-10 py-10 md:py-12">
-        <div className="grid md:grid-cols-[1.5fr_1fr] gap-10 items-stretch">
-          {/* LEFT — 모닝 브리핑 */}
+      <div className="relative px-10 md:px-12 py-14 md:py-20">
+        <div className="grid md:grid-cols-[1.4fr_1fr] gap-12 items-center">
+          {/* LEFT — 임팩트 헤딩 + 브리핑 */}
           <div>
-            <div className="flex items-center gap-2 mb-5">
-              <span className="font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55">
-                MORNING BRIEFING
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-badge bg-paper/70 border border-rule-light backdrop-blur-sm mb-7 shadow-card"
+            >
+              <span className="relative flex w-1.5 h-1.5">
+                <span className="absolute inset-0 rounded-full bg-indigo animate-ping opacity-50" />
+                <span className="relative w-1.5 h-1.5 rounded-full bg-indigo" />
               </span>
-              <span className="w-1 h-1 rounded-full bg-white/30" />
-              <span className="font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-white/55 tabular-nums">
-                2026.05.10 · 09:00 KST
+              <span className="font-inter text-[11px] font-semibold uppercase tracking-[0.18em] text-indigo-deep tabular-nums">
+                MORNING BRIEFING · 2026.05.10
               </span>
             </div>
 
-            <h1 className="font-sans text-[32px] md:text-[40px] leading-[1.2] tracking-tight text-white font-medium">
-              어제, 마케팅에서 일어난 일을<br />
-              <span className="text-white/70">한 단락으로 정리했어요.</span>
+            <h1 className="font-sans text-[44px] md:text-[68px] leading-[1.05] tracking-[-0.02em] text-ink font-bold">
+              <span className="text-indigo">한 컨텍스트</span>,
+              <br />
+              <span className="text-indigo">세 활동</span>으로
+              <br />
+              <span className="text-ink/80">마케팅이 흐른다.</span>
             </h1>
 
-            <p className="mt-7 text-[15px] md:text-[16px] text-white/80 leading-[1.85] max-w-2xl">
-              <span className="font-inter font-semibold text-white tabular-nums">8개</span> 새 경쟁사 광고가 추가됐고,
-              ROAS는 <span className="font-inter font-semibold text-white tabular-nums">3.8x</span>{' '}
-              <span className="font-inter font-semibold text-success-bg tabular-nums">(+12%)</span>.
+            <p className="mt-8 text-[16px] md:text-[17px] text-ink-2 leading-[1.85] max-w-2xl">
+              갤러리에서 발견하고, 어시스턴트로 검수하고, 대시보드로 측정합니다.
               <br />
-              검수 대기 <span className="font-inter font-semibold text-white tabular-nums">3건</span>,
-              화장솜 카테고리 콘텐츠 피로도{' '}
-              <span className="font-inter font-semibold text-warning-bg tabular-nums">+18%</span> 누적 — 신규 후크 변형이 필요해요.
+              <span className="font-inter font-semibold tabular-nums">8개</span> 새 광고 ·
+              ROAS <span className="font-inter font-semibold tabular-nums">3.8x</span>{' '}
+              <span className="font-inter font-semibold text-success-deep tabular-nums">(+12%)</span> ·
+              검수 <span className="font-inter font-semibold tabular-nums">3건</span> 대기 중.
             </p>
           </div>
 
-          {/* RIGHT — AI 핸드오프 카드 */}
-          <div
-            className="rounded-card p-5 backdrop-blur-sm flex flex-col justify-between"
-            style={{
-              background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.12)',
-            }}
-          >
-            <div>
-              <div className="flex items-center gap-2 mb-3">
+          {/* RIGHT — 흰 floating AI 카드 */}
+          <div className="bg-paper rounded-card border border-rule-light shadow-card-hover p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-7 h-7 rounded-lg bg-indigo-bg flex items-center justify-center">
                 <Sparkles size={14} className="text-indigo" />
-                <span className="font-inter text-[11px] font-semibold uppercase tracking-[0.16em] text-white/70">
-                  AI Insight · Today
-                </span>
               </div>
-              <p className="text-[14px] text-white/85 leading-[1.7]">
-                "ROAS 3.8을 만든 핵심 — <span className="text-white">30대 여성 화장솜 콘텐츠</span>.
-                같은 카테고리 피로도 누적 중. 사용자 검증 후크
-                <span className="text-white">(GUIDE-2.3)</span> 변형이 시급."
-              </p>
+              <span className="font-inter text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-3">
+                AI Insight · Today
+              </span>
             </div>
-            <button className="mt-5 inline-flex items-center justify-between gap-2 px-3 py-2 -mx-1 rounded-lg text-[13px] font-medium text-white/85 hover:text-white hover:bg-white/8 transition-colors">
+
+            <p className="font-sans text-[20px] font-bold text-ink leading-[1.35] mb-3">
+              ROAS 3.8을 만든 핵심,<br />
+              <span className="text-indigo">30대 여성 화장솜 콘텐츠</span>
+            </p>
+
+            <p className="text-[13.5px] text-ink-3 leading-[1.7] mb-5">
+              같은 카테고리 피로도{' '}
+              <span className="font-inter font-semibold text-warning-deep tabular-nums">+18%</span> 누적.
+              사용자 검증 후크{' '}
+              <span className="font-inter font-medium text-ink-2">(GUIDE-2.3)</span> 변형이 시급해요.
+            </p>
+
+            <button className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-button bg-indigo text-paper font-medium text-[14px] hover:bg-indigo-deep transition-colors duration-200 shadow-card">
               <span>인사이트 자세히 분석</span>
               <ArrowRight size={14} />
             </button>
